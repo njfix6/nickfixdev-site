@@ -98,6 +98,18 @@ a:hover { opacity: 0.7; }
   margin: 0 0 16px;
 }
 
+.eyebrow--icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.h1--icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 h1 {
   font-size: 32px;
   line-height: 1.25;
@@ -200,6 +212,164 @@ hr {
 }
 
 .card-body { margin: 0; }
+
+.why-link {
+  text-align: center;
+  margin: 32px 0 0;
+  font-size: 15px;
+}
+
+.packages {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.package-card {
+  display: block;
+  text-decoration: none;
+  color: var(--fg);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 24px;
+  transition: background 0.15s ease;
+}
+
+.package-card:hover {
+  opacity: 1;
+  background: var(--pill-bg);
+}
+
+.package-card h2 { margin: 0 0 6px; font-size: 20px; }
+.package-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.package-card p { margin: 0 0 14px; }
+.package-card .pills { margin: 0 0 14px; }
+
+.package-cta {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.section--pink {
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.82);
+  --border: rgba(255, 255, 255, 0.22);
+  --pill-bg: rgba(255, 255, 255, 0.18);
+  --pill-fg: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-fg: #c01f7a;
+  --btn-bg-hover: rgba(255, 255, 255, 0.88);
+  background: #c01f7a;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin: 32px 0;
+}
+
+.section--pink h2:first-child { margin-top: 8px; }
+
+.scaling-graph {
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.scaling-graph svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  color: var(--fg);
+}
+
+.scaling-graph svg text {
+  font-family: inherit;
+}
+
+.scaling-graph figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.package-card--pink {
+  background: #c01f7a;
+  color: #ffffff;
+}
+
+.package-card--pink:hover { background: #a61a69; }
+.package-card--pink p { color: rgba(255, 255, 255, 0.85); }
+.package-card--pink .pill {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.section--blue {
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.82);
+  --border: rgba(255, 255, 255, 0.22);
+  --pill-bg: rgba(255, 255, 255, 0.18);
+  --pill-fg: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-fg: #1d4ed8;
+  --btn-bg-hover: rgba(255, 255, 255, 0.88);
+  background: #1d4ed8;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin: 32px 0;
+}
+
+.section--blue h2:first-child { margin-top: 8px; }
+
+.package-card--blue {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+.package-card--blue:hover { background: #1842b8; }
+.package-card--blue p { color: rgba(255, 255, 255, 0.85); }
+.package-card--blue .pill {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.section--green {
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.82);
+  --border: rgba(255, 255, 255, 0.22);
+  --pill-bg: rgba(255, 255, 255, 0.18);
+  --pill-fg: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-fg: #0f7a4a;
+  --btn-bg-hover: rgba(255, 255, 255, 0.88);
+  background: #0f7a4a;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin: 32px 0;
+}
+
+.section--green h2:first-child { margin-top: 8px; }
+
+.package-card--green {
+  background: #0f7a4a;
+  color: #ffffff;
+}
+
+.package-card--green:hover { background: #0c6640; }
+.package-card--green p { color: rgba(255, 255, 255, 0.85); }
+.package-card--green .pill {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
 
 .final-cta {
   text-align: center;

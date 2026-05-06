@@ -1,8 +1,15 @@
-export default function Hero({ bookingUrl }) {
+export default function Hero({ bookingUrl, children }) {
   return (
     <section>
       <p className="eyebrow">service · flagship offering</p>
-      <h1>Scaling readiness assessment</h1>
+      <h1 className="h1--icon">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <polyline points="3 17 9 11 13 15 21 7" />
+          <polyline points="14 7 21 7 21 14" />
+        </svg>
+        Scaling Readiness Assessment
+      </h1>
+      {children}
       <p className="sub">
         Know exactly what will break first, when it will break, and what
         you're overpaying for today.
